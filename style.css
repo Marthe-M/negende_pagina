@@ -1,0 +1,128 @@
+.grid-container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+  grid-auto-columns: 1frx 3fr;
+  
+    gap: 10px;
+justify-content: center;
+}
+
+.site-header {
+    grid-column-start: span 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+        background-color: lightskyblue;
+}
+
+.site-main {
+    grid-column-start: span 2;
+    grid-row-start: 3;
+    grid-row-end: 8;
+   
+        background-color: lightgreen;
+     
+
+}
+
+.widget-area {
+    grid-column-start: span 2;
+    grid-row-start: 8;
+    grid-row-end: 10;
+   
+    background-color: purple;
+}
+
+.site-footer {
+    grid-column-start: span 2;
+    grid-row-start: 10;
+    grid-row-end: 12;
+    background-color: darkblue;
+}
+
+@media only screen and (min-width: 680px) {
+
+
+    .site-header {
+        grid-column-start: 1 / 2;
+        grid-row-start: 1;
+        grid-row-end: 12;
+            background-color: lightskyblue;
+    }
+    
+    .site-main {
+        grid-column-start: span 2;
+        grid-row-start: 1;
+        grid-row-end: 8;
+       
+            background-color: lightgreen;
+         
+    
+    }
+    
+    .widget-area {
+        grid-column-start: span 2;
+        grid-row-start: 8;
+        grid-row-end: 10;
+       
+        background-color: purple;
+    }
+    
+    .site-footer {
+        grid-column-start: span 2;
+        grid-row-start: 10;
+        grid-row-end: 12;
+        background-color: darkblue;
+    }
+}
+
+    @media only screen and (min-width: 1000px) 
+    {
+
+
+        .grid-container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: repeat(12, 1fr);
+          grid-auto-columns: 1frx 3fr 1fr;
+          
+            gap: 10px;
+        justify-content: center;
+        }
+
+        .site-header {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 12;
+                background-color: lightskyblue;
+        }
+        
+        .site-main {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 10;
+           
+                background-color: lightgreen;
+             
+        
+        }
+        
+        .widget-area {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 12;
+           
+            background-color: purple;
+        }
+        
+        .site-footer {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 10;
+            grid-row-end: 12;
+            background-color: darkblue;
+        }
+    }
